@@ -3,10 +3,11 @@
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
 }
+
 .banner{
 	width: 100%;
 	height: 240px;
-	background-image: linear-gradient(to right, rgba(255,255,255),rgba(0,0,0,0.75)), url(images/123.jpg);
+	background-image: linear-gradient(to right, rgba(255,255,255),rgba(0,0,0,0.70)), url(images/123.jpg);
 	background-position: center;
 	background-size: cover;
 	
@@ -14,16 +15,19 @@
 .theme{
 	width: 100%;
 	position: absolute;
-	top: 14%;
 	transform: translateY(-50%);
-	text-align: center;
-	color: #fff;
+	color: #ff7200;
+
 }
 
 .theme p1{
-	font-family: 'Roboto';
+	font-family: 'Roboto', sans-serif;
 	font-size: 50px;
-	margin-left: -150px;
+	position: fixed;
+	top: -120px;
+	left: 350px;
+	white-space: nowrap;
+	text-shadow: 2px 2px 4px #fff;
 
 }
 .navbar{
@@ -79,7 +83,7 @@
   background-color: #ff7200;
   min-width: 50px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);
-  z-index: 1;
+  z-index: 2;
   margin-top: 5px;
 }
 
@@ -149,33 +153,31 @@
 }
 
 #myVideo {
-  position: relative;
-  margin-top: -170px;
-  right: 0;
+  position: absolute;
+  top: 230px;
   bottom: 0;
   min-width: 100%;
   min-height: 100vh;
 }
 
 .content{
-	width: 60%;
+	width: 50%;
 	background: rgba(0, 0, 0, 0.75);
 	box-shadow: 0px 8px 16px 0px #ff7200;
 	position: absolute;
-	margin-left: 320px;
+	top: 350px;
+	left: 650px;
+	height: 350px;
 	color: #f1f1f1;
-	top: 65%;
-	transform: translateY(-50%);
 	text-align: center;
 	color: #fff;
 	min-width: 50px;
 	z-index: 1;
-	margin-top: 10px;
 	
 }
 .content h1{
 	font-size: 70px;
-	margin-top: 80px;
+	margin-top: 65px;
 }
 .content p{
 	margin: 20px auto;
@@ -294,4 +296,396 @@ button:hover span{
 }
 button:hover{
 	border: none;
+}
+
+.form{
+	width: 290px;
+	height: 450px;
+	background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
+	position: absolute;
+	top: 300px;
+	left: 1000px;
+	border-radius: 15px;
+	padding: 25px
+}
+
+.form h2{
+	width: 240px;
+	font-family: sans-serif;
+	text-align: center;
+	color: #ff7200;
+	font-size: 22px;
+	background-color: #fff;
+	border-radius: 10px;
+	margin: 2px;
+	padding: 8px;
+}
+
+.form input{
+	width: 240px;
+	height: 35px;
+	background: transparent;
+	border-bottom: 1px solid #ff7200;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin-top: 30px;
+	font-family: sans-serif;
+}
+
+.form input:focus{
+	outline: none;
+}
+
+::placeholder{
+	color: #fff;
+	font-family: Arial;
+}
+
+.btnn{
+	width: 240px;
+	height: 40px;
+	background: #ff7200;
+	border: none;
+	margin-top: 30px;
+	right: 10px;
+	font-size: 18px;
+	border-radius: 10px;
+	cursor: pointer;
+	color: #fff;
+	transition: 0.4s ease;
+}
+
+.btnn:hover{
+	background: #fff;
+	color: #ff7200;
+}
+
+.btnn a{
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+
+}
+
+.form .link{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	padding-top: 20px;
+	text-align: center;
+	color: #fff;
+}
+
+.form .link a{
+	text-decoration: none;
+	color: #ff7200;
+}
+
+.liw{
+	padding-top: 15px;
+	padding-bottom: 10px;
+	text-align: center;
+	color: #fff; 
+}
+
+.icons a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.icons ion-icon{
+	color: #fff;
+	font-size: 30px;
+	padding-left: 14px;
+	padding-top: 5px;
+	transition: 0.3s ease;
+}
+
+.icons ion-icon:hover{
+	color: #ff7200;
+}
+
+.background{
+	width: 100%;
+	height: 850px;
+	background-image: url(images/interior-design-mansions-wallpaper-preview.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.concept{
+	position: absolute;
+	top: 300px;
+	left: 50px;
+	height: 200px;
+	color: #f1f1f1;
+	text-align: left;
+	color: #000;
+	
+}
+.concept h1{
+	font-size:100px;
+	margin-top: 65px;
+}
+
+.container{
+	position: absolute;
+	top: 1100px;
+	left: 350px;
+	bottom: 200px;
+	text-align: center;
+	color: #fff;
+	z-index: 1;
+}
+
+.about{
+	position: absolute;
+	top: 8px;
+	left: 50px;
+	height: 200px;
+	color: #f1f1f1;
+	text-align: left;
+	color: #000;
+	min-width: 50px;
+	z-index: 1;
+	
+}
+.about h1{
+	font-size: 50px;
+	margin-top: 65px;
+}
+
+div.a{
+	text-indent: 5%;
+}
+
+.about p{
+	width: 950px;
+	text-align: justify;
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+	margin-right: 120px;
+}
+
+ul.a{
+	list-style-type: circle;
+}
+
+.background1{
+	position: absolute;
+	margin-top: 2200px;
+	width: 100%;
+	height: 700px;
+	background-image: linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)), url(images/12345.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+@keyframes lights {
+  0% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+  30% { 
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  40% { 
+    color: hsl(230, 100%, 95%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 90%, 0.5),
+      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  70% {
+    color: hsl(230, 80%, 90%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.5),
+      0 0 0.125em hsla(320, 100%, 60%, 0.5),
+      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+  }
+  
+  100% {
+    color: hsl(230, 40%, 80%);
+    text-shadow:
+      0 0 1em hsla(320, 100%, 50%, 0.2),
+      0 0 0.125em hsla(320, 100%, 60%, 0.3),
+      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+  }
+  
+}
+
+body {
+  margin: 0;
+  font: 100%;
+  color: hsl(230, 100%, 95%);
+  height: 100vh;
+  display: flex;
+}
+
+
+@font-face {
+    font-family: RaphLanokFuture;
+    src: url(images/RaphLanokFuture.ttf);
+}
+  
+h3 {
+    font-family: RaphLanokFuture;
+    color: #fff;
+	margin-top: 50px;
+	margin-left: 90px;
+	font-size: 4.5rem;
+	font-weight: 300;
+	animation: lights 5s 750ms linear infinite;
+}
+
+.card{
+	margin-top: -30px;
+}
+
+.slick-slide img{
+	margin: 0 auto;
+	max-width: 120px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	margin-bottom: 25px;
+}
+
+.item{
+	padding: 15px;
+	outline: none;
+}
+
+.item-inner{
+	background: linear-gradient(45deg, #ff6600, #fff000);
+	border-radius: 18px;
+	text-align: center;
+	padding: 25px;
+}
+
+.item-inner h4{
+	font-size: 30px;
+	color: #fff;
+	font-family: Nueva Std;
+	text-transform: capitalize;
+}
+
+.item-inner p{
+	font-size: 16px;
+	color: #fff;
+	font-family: Open Sans;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+}
+
+.social{
+	margin-top: 50px;
+}
+
+.social a{
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	background-color: #fff;
+	color: #ff6c00;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 20px;
+	margin: 0 5px;
+	transition: all ease 0.5s;
+}
+
+.social a:hover{
+	transform: translateY(-10px);
+}
+
+/*BACKGROUND COLOR*/
+.item2 .item-inner{
+	background: linear-gradient(45deg, #0060ff, #fe0ff0);
+}
+
+.item3 .item-inner{
+	background: linear-gradient(45deg, #00c0ff, #5ad607);
+}
+
+.item4 .item-inner{
+	background: linear-gradient(45deg, #ffd200, #07d767);
+}
+
+.item5 .item-inner{
+	background: linear-gradient(45deg, #0b618a, #07d6b9);
+}
+
+/*ICON COLOR*/
+.item2 .social a{
+	color: #0f5cff
+}
+
+.item3 .social a{
+	color: #06c1ed
+}
+
+.item4 .social a{
+	color: #f0d207
+}
+
+.item5 .social a{
+	color: #0a698d
+}
+
+.slick-slide{
+	transform: scale(0.8);
+	opacity: 0.3;
+	transition: all ease 0.5s;
+}
+
+.slick-slide.slick-current{
+	transform: scale(1);
+	opacity: 1;
+}
+
+
+/*SLIDER CONTROL*/
+.slick-arrow{
+	position: absolute;
+	bottom:270px;
+	z-index: 99;
+	background: #ff7200;
+	border: none;
+	padding: 8px 15px;
+	border-radius: 50px;
+	width: 100px;
+	outline: none;
+}
+
+.slick-next{
+	left: 52%;
+}
+
+.slick-prev{
+	Left: 43%;
+}
+
+.slick-list{
+	padding-top: 55px !important;
+	padding-bottom: 55px !important;
 }

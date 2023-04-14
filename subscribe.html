@@ -1,0 +1,90 @@
+<html> 
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sirius Atelier</title>
+	<link rel="stylesheet" href="style.css">
+	
+	<link href="https://fonts.googleapis.com/css2>
+	family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="banner"> 
+		<div class="navbar">
+			<img src="images/logo.png" class="logo">
+			<div class="theme">
+				<p1>Making Your Visions into Reality</p1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					 <div class="dropdown">
+					<li><a href="#">Services</a></li>
+						<div class="dropdown-content">
+							<a href="#">Expertise</a>
+							<a href="#">Interior Design</a>
+							<a href="#">Consultation</a>
+						</div>
+					</div>
+					 <div class="dropdown">
+					<li><a href="#">Projects</a></l>
+						<div class="dropdown-content">
+							<a href="#">Residential</a>
+							<a href="#">Commercial</a>
+							<a href="#">Large Scale Development</a>
+							<a href="#">Others</a>
+						</div>
+					</div>					
+					<li><a href="about us.html">About Us</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+		</div>
+		
+		<div class="search">
+			<input class="srch" type="search" name="" placeholder="Type to Search">
+			<a href="#"> <button class="btn">Search</button></a>
+		</div>
+	</div>
+
+	<video autoplay muted loop id="myVideo">
+  <source src="C:\Users\admin\Desktop\SIRIUS ATELIER WEBSITE\images\login.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+	</video>
+
+	<div class="form">
+		<h2>Login Here</h2>
+			<input type="email" placeholder="Enter Email Here">
+			<input type="password" placeholder="Enter Password Here">
+			<button class="btnn"><a href="#">Login</a></button>
+			
+			<p class="link">Don't have an account<br>
+			<a href="#">Sign up </a> Here</a></p>
+			<p class="liw">Log in with</p>
+			
+			<div class="icons">
+					<a href="https://facebook.com"><ion-icon name="logo-facebook"></ion-icon></a>
+					<a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a>
+					<a href="https://twitter.com/i/flow/login"><ion-icon name="logo-twitter"></ion-icon></a>
+					<a href="https://gmail.com"><ion-icon name="logo-google"></ion-icon></a>
+					<a href="https://www.skype.com/en/"><ion-icon name="logo-skype"></ion-icon></a>
+			</div>
+		</div>
+		
+	<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
